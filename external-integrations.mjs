@@ -61,6 +61,7 @@ export function integrationStatus() {
 
 export function publicTrackingConfig() {
   return {
+    paymobAvailable: integrationStatus().paymob.configured,
     metaPixelId: value("META_PIXEL_ID"),
     googleTagId: value("GOOGLE_ADS_TAG_ID"),
     googleConversionLabel: value("GOOGLE_ADS_CONVERSION_LABEL"),
